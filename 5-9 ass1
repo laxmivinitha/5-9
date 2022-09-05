@@ -1,0 +1,19 @@
+
+#include<stdio.h>   
+void show(int,int);      
+int main()
+{
+	int n,m;
+	scanf("%d%d",&n,&m);
+	show(n,m);
+	return 0;
+}
+void show(int x,int y)
+{
+	if(x>y)
+	return;//stop
+	else
+	printf("%d\n",x);
+	show(x+1,y);
+	
+}
