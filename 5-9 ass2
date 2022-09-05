@@ -1,0 +1,21 @@
+
+#include<stdio.h>
+void show(int* a,int s,int e)
+{
+	if(s>e)
+	return;
+	else
+	printf("%d\n",a[s]);
+	show(a,s+1,e);
+}
+
+int main()
+{
+	int a[50],i,n,l;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	l=n-1;
+	show(a,0,l);
+	return 0;
+}
